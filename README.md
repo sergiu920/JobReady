@@ -1,13 +1,13 @@
-# FreelanceReady
+# JobReady
 
-FreelanceReady is a hands-on project for building and demonstrating real-world web development skills through practical coding tasks.
+JobReady is a hands-on project for building and demonstrating real-world web development skills through practical coding tasks.
 
 The project is built progressively, starting with native Node.js and later introducing Express, TypeScript, PostgreSQL, and React.
 
 ## Goals
 
 * Practice backend and frontend development through real features
-* Build practical coding tasks similar to those encountered in freelance work
+* Build practical coding tasks
 * Track completed tasks and development progress
 * Create a public portfolio that demonstrates practical experience
 * Learn how Node.js works before introducing higher-level frameworks
@@ -71,7 +71,7 @@ The project is currently in the initial Node.js stage.
 * [ ] Introduce TypeScript
 * [ ] Add PostgreSQL
 * [ ] Build React frontend
-* [ ] Add practical freelance tasks
+* [ ] Add practical job tasks
 * [ ] Add task submission and progress tracking
 * [ ] Add user profiles and achievements
 
