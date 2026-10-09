@@ -1,16 +1,12 @@
-import http from 'node:http';
+import express from 'express';
+import router from './routes/router.js';
 import 'dotenv/config';
-import { router } from './routes/router.js';
 
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-const server = http.createServer((req, res) => {
-    router(req, res).catch((err) => {
-        res.writeHead(500, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ error: 'Server error', details: err.message }))
-    })
-});
+app.use('/', router);
 
-server.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 })

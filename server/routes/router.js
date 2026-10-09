@@ -1,14 +1,13 @@
-import { register } from '../controllers/authController.js';
-import { parseBody } from '../utils/parseBody.js';
+import express from 'express';
 
-export async function router(req, res) {
+const router = express.Router();
 
-    if(req.method === 'POST' && req.url === '/api/register') {
-        const body = await parseBody(req);
+router.get('/', (req, res) => {
+    res.send('Welcome to JobReady');
+});
 
-        return register(req, res, body);
-    }
+router.post('/api/register', (req, res) => {
+    res.send('Register');
+});
 
-    res.writeHead(404, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ error: 'Route not found' }));
-}
+export default router;
