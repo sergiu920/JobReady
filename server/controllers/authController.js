@@ -4,4 +4,3 @@ export async function register(req, res) {
         success: 'ok'
     });
 }
-

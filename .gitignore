@@ -3,8 +3,9 @@
 
 # environment variables
 .env
-server/.env
-client/.env
 
 # build output
 client/dist
+
+# Draft code
+scratch
