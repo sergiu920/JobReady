@@ -3,6 +3,8 @@
 
 # environment variables
 .env
+.env.*
+!.env.example
 
 # build output
 client/dist
